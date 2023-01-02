@@ -43,9 +43,11 @@ const Settings=() => {
             key : '3',
             title : 'Last Signed In',
             dataIndex : 'loginTimeText',
-            sorter : (a,b)=>{
-                return a.loginTimeText.localeCompare(b.loginTimeText)
-            },
+            sorter: (a,b) => {
+            const aInMilliSeconds=parseInt(new Date(a.loginTimeText).getMilliseconds())
+            const bInMilliSeconds=parseInt(new Date(b.loginTimeText).getMilliseconds())
+            return aInMilliSeconds-bInMilliSeconds
+           },
             render : (record)=>{
                 const createdAt = formatDistanceToNow(new Date(record)).split(' ')
                 return `${createdAt.join(' ')} ago`
