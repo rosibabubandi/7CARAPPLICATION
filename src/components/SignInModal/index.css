@@ -1,0 +1,132 @@
+.add-user-button {
+    height: 35px;
+    width: 110px;
+    background-color: #10b040;
+    font-family: 'Roboto';
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.popup-main-container {
+    height: 50vh;
+    width: 60vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid #ebe1e2;
+    border-radius: 5px;
+}
+.popup-inside-left-container {
+  background-color: #e8848b;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.add-user-image {
+  margin-top: 10px;
+    height: 45%;
+    width: 65%;
+}
+.add-user-description-text {
+    color: #ffffff;
+    font-size: 14px;
+}
+.popup-inside-right-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5px;
+}
+.user-information-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+.form-container {
+    height: 90%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .label-text {
+    font-family: 'Roboto';
+    color: #475569;
+    margin-top: 10px;
+    font-weight: 200;
+  }
+  .input-element {
+    height: 20px;
+    width: 60%;
+    padding: 6px;
+    font-family: 'Roboto';
+    color: #92a6bb;
+    background-color: inherit;
+    border: 1px solid #92a6bb;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .required-text {
+    font-family: 'Roboto';
+    color: #ff0b37;
+  }
+  .select-styles {
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #92a6bb;
+  }
+  .option-text {
+    font-family: 'Roboto';
+    color: #92a6bb;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 7px;
+  }
+  .cancel-button {
+    background-color: #c78708;
+    border: none;
+    color: #ffffff;
+    height: 35px;
+    width: 95px;
+    font-family: 'Roboto';
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .add-button {
+    background-color: #10b040;
+    border: none;
+    color: #ffffff;
+    height: 35px;
+    width: 95px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+@media screen and (min-width: 767px) {
+    .popup-main-container {
+        height: 50vh;
+        width: 60vw;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        border: 1px solid #ebe1e2;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,49 @@
+.header-main-container {
+    height: 15vh;
+    background-color: #ffffff;
+    background-size: cover;
+    border-bottom: 1px solid #ded9d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.hello-ar-image-size {
+    height: 45px;
+    width: 180px;
+}
+.header-bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.ar-my-application-profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ar-image {
+    height: 25px;
+    width: 30px;
+    margin-right: 10px;
+}
+.my-application-text {
+    font-family: 'Roboto';
+    color: #676269;
+    font-size: 13px;
+}
+.username-text {
+    font-family: 'Roboto';
+    color: #676269;
+    font-size: 12px;
+}
+.user-profile-image {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}

@@ -1,0 +1,38 @@
+.settings-main-container {
+  width: 98vw;
+  height: 80vh;
+  display: flex;
+}
+.settings-container {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.only-modal-container {
+    display: flex;
+    
+}
+  table {
+    border: 1px solid #ebe1e2;
+    width: 80vw;
+    text-align: center;
+  }
+  th{
+    border: 1px solid #ebe1e2;
+    background-color: #a89796;
+}
+  td {
+      border: 1px solid #ebe1e2;
+      background-color: #ffffff;
+  }
+  .delete-icon {
+    background-color: green;
+    color: #ffffff;
+    height: 25px;
+    width: 25px;
+    border-radius: 14px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
