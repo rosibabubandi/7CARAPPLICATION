@@ -1,5 +1,5 @@
 .header-main-container {
-    height: 15vh;
+    height: 11vh;
     background-color: #ffffff;
     background-size: cover;
     border-bottom: 1px solid #ded9d1;
@@ -7,9 +7,11 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .hello-ar-image-size {
-    height: 45px;
+    height: 40px;
     width: 180px;
 }
 .header-bottom-container {
@@ -18,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 .ar-my-application-profile-container {
     display: flex;

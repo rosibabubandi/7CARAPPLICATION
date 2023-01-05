@@ -22,8 +22,6 @@ const Settings=() => {
     else {
         arUsersList=localStorageData
     }
-
-    console.log(arUsersList)
     
     const columns = [
         {
@@ -43,6 +41,11 @@ const Settings=() => {
             key : '3',
             title : 'Last Signed In',
             dataIndex : 'loginTimeText',
+           sorter: (a,b) => {
+            const aInMilliSeconds=parseInt(new Date(a.loginTimeText).getMilliseconds())
+            const bInMilliSeconds=parseInt(new Date(b.loginTimeText).getMilliseconds())
+            return aInMilliSeconds-bInMilliSeconds
+           },
             render : (record)=>{
                 const createdAt = formatDistanceToNow(new Date(record)).split(' ')
                 return `${createdAt.join(' ')} ago`
@@ -78,10 +81,10 @@ const Settings=() => {
                     <div className='only-modal-container'>
                         <SigInModal/>
                     </div>
-                        <Table style={{width:800,color:'black',backgroundColor:'white'}}
+                        <Table className='table-style'
                         dataSource={arUsersList}
                         pagination={{
-                            pageSize:5
+                            pageSize:4
                         }}
                         columns={columns}
                         />

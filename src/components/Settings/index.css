@@ -1,6 +1,6 @@
 .settings-main-container {
   width: 98vw;
-  height: 80vh;
+  height: 75vh;
   display: flex;
 }
 .settings-container {
@@ -12,14 +12,15 @@
     display: flex;
     
 }
-  table {
+  .table-style {
     border: 1px solid #ebe1e2;
-    width: 80vw;
+    min-width: 60vw;
+    max-width: 65vw;
     text-align: center;
   }
   th{
     border: 1px solid #ebe1e2;
-    background-color: #a89796;
+    background-color: #8d9990;
 }
   td {
       border: 1px solid #ebe1e2;

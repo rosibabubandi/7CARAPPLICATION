@@ -28,33 +28,45 @@ const SigInModal=() => {
     const [username, setUsername]=useState('')
     const [emailId, setEmailId]=useState('')
     const [role, setRole]=useState('Admin')
+    const [errorMessage, setErrorMessage]=useState('')
+    const [isError, setError]=useState(false)
 
       const onSubmitForm = event => {
         event.preventDefault()
-
-        let idOfNewUser
-        if (allUsersData.length === 0) {
-          idOfNewUser=1
+        if (username === '') {
+          setError(true)
+          setErrorMessage('Username Should Not be empty*')
         }
-        else {
-          let IdOfAllUsers=allUsersData.map(eachUser => eachUser.id)
-          let latestId=Math.max(...IdOfAllUsers)
-          idOfNewUser=(latestId)+1
+        else if (emailId === '') {
+          setError(true)
+          setErrorMessage('Email ID Should Not be empty*')
+        }
+        if (username !== '' && emailId !== '' && role !== '') {
+          setError(false)
+
+          let idOfNewUser
+          if (allUsersData.length === 0) {
+            idOfNewUser=1
+          }
+          else {
+            let IdOfAllUsers=allUsersData.map(eachUser => eachUser.id)
+            let latestId=Math.max(...IdOfAllUsers)
+            idOfNewUser=(latestId)+1
+          }
+
+          const newUserObject={
+              id: idOfNewUser,
+              username,
+              emailId,
+              role,
+              loginTimeText: new Date()
+          }
+          storeUsersData(newUserObject)
+          setUsername('')
+          setEmailId('')
+          setRole('')
         }
 
-        
-
-        const newUserObject={
-            id: idOfNewUser,
-            username,
-            emailId,
-            role,
-            loginTimeText: new Date()
-        }
-        storeUsersData(newUserObject)
-        setUsername('')
-        setEmailId('')
-        setRole('Admin')
       }
           
 
@@ -73,24 +85,24 @@ const SigInModal=() => {
                                 Username
                                 </label>
                                 <input
-                                
                                 onChange={event => {
                                   setUsername(event.target.value)}}
                                 value={username}
                                 id="username"
                                 className="input-element"
                                 type="text"
+                                placeholder='Enter Your Name Here'
                                 />
                                 <label className="label-text" htmlFor="emailId">
                                 Eamil Id of User
                                 </label>
                                 <input
-                                
                                 onChange={event => setEmailId(event.target.value)}
                                 value={emailId}
                                 id="emailId"
                                 className="input-element"
                                 type="text"
+                                placeholder='Enter Your Email ID Here'
                                 />
                                 <label htmlFor='selectRole' className='label-text'>Role</label>
                                 <select id='selectRole' value={role} onChange={event => setRole(event.target.value)} className='select-styles'>
@@ -104,6 +116,7 @@ const SigInModal=() => {
                                     Add
                                     </button>
                                 </div>
+                                {isError && <p className='error-message'>{errorMessage}</p>}
                             </form>
                         </div>
                     </div>

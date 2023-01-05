@@ -7,11 +7,13 @@
     border-width: 0px;
     border-radius: 15px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .popup-main-container {
-    height: 50vh;
+    height: 60vh;
     width: 60vw;
     background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #e6e0ca;
     border-radius: 10px;
     display: flex;
     border: 1px solid #ebe1e2;
@@ -19,8 +21,8 @@
 }
 .popup-inside-left-container {
   background-color: #e8848b;
-  width: 35%;
-  height: 100%;
+  width: 40%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +39,7 @@
     font-size: 14px;
 }
 .popup-inside-right-container {
-    width: 65%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -50,8 +52,8 @@
     font-size: 20px;
 }
 .form-container {
-    height: 90%;
-    width: 100%;
+    height: 88%;
+    width: 90%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -63,39 +65,40 @@
   .label-text {
     font-family: 'Roboto';
     color: #475569;
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 200;
   }
   .input-element {
     height: 20px;
-    width: 60%;
+    width: 80%;
     padding: 6px;
     font-family: 'Roboto';
     color: #92a6bb;
     background-color: inherit;
     border: 1px solid #92a6bb;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .required-text {
     font-family: 'Roboto';
     color: #ff0b37;
   }
   .select-styles {
-    width: 60%;
-    height: 30px;
+    width: 87%;
+    height: 33px;
     border-radius: 10px;
     border: 1px solid #92a6bb;
+    margin-top: 5px;
   }
   .option-text {
     font-family: 'Roboto';
-    color: #92a6bb;
+    color: #475569;
   }
   .buttons-container {
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-top: 7px;
+    margin-top: 10px;
   }
   .cancel-button {
     background-color: #c78708;
@@ -119,11 +122,15 @@
     cursor: pointer;
     font-size: 14px;
   }
+  .error-message {
+    font-family: 'Roboto';
+    color: #ff0b37;
+  }
 @media screen and (min-width: 767px) {
     .popup-main-container {
-        height: 50vh;
-        width: 60vw;
-        background-color: #ffffff;
+        height: 61vh;
+        width: 52vw;
+        box-shadow: 0px 4px 16px 0px #e6e0ca;
         border-radius: 10px;
         display: flex;
         border: 1px solid #ebe1e2;

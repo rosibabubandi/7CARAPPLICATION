@@ -1,0 +1,17 @@
+.demo-main-container {
+    width: 98vw;
+    height: 75vh;
+    display: flex;
+  }
+  .demo-container {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+  .demo-heading {
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #c4a218;
+    margin-top: 10px;
+    margin-left: 10px;
+  }

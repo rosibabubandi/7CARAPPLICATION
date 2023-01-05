@@ -1,7 +1,12 @@
 import {useState,useEffect} from 'react'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 
 import Settings from './components/Settings'
+import Products from './components/Products'
+import DemoScript from './components/DemoScript'
+import Customers from './components/Customers'
+import SalesTeam from './components/SalesTeam'
+import Demo from './components/Demo'
 import NotFound from './components/NotFound'
 
 import ARContext from './context/ARContext'
@@ -39,8 +44,14 @@ const App = () => {
         return(
             <ARContext.Provider value={{activeTab, allUsersData, changeTab:changeTab, storeUsersData:storeUsersData, onDeleteUser: onDeleteUser}}>
                 <Routes>
-                    <Route exact path='/' element={<Settings/>}/>
-                    <Route path='/not-found' component={NotFound}/>
+                    <Route exact path='/settings' element={<Settings/>}/>
+                    <Route exact path='/products' element={<Products/>}/>
+                    <Route exact path='/demoscript' element={<DemoScript/>}/>
+                    <Route exact path='/customers' element={<Customers/>}/>
+                    <Route exact path='/sales' element={<SalesTeam/>}/>
+                    <Route exact path='/demo' element={<Demo/>}/>
+                    <Route path='/not-found' element={<NotFound/>}/>
+                    <Route path="*" element={<Navigate to="/not-found" replace />}/>
                 </Routes>
             </ARContext.Provider>
         )

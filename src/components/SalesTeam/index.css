@@ -1,0 +1,17 @@
+.sales-main-container {
+    width: 98vw;
+    height: 75vh;
+    display: flex;
+  }
+  .sales-container {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+  .sales-heading {
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #0c8721;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
