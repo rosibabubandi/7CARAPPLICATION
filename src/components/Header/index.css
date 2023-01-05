@@ -22,6 +22,9 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+.link-element {
+    text-decoration: none;
+}
 .ar-my-application-profile-container {
     display: flex;
     flex-direction: row;

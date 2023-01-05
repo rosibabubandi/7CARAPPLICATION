@@ -35,7 +35,7 @@ const Sidebar=() => {
                             <p className='tab-text'>Demos</p>
                         </div>
                     </Link>
-                    <Link className='link-element' to='/settings'>
+                    <Link className='link-element' to='/'>
                         <div className={activeTab==='settings'?'active-tab-container':'normal-tab-container'} onClick={() => changeTab('settings')}>
                             <p className='tab-text'>Settings</p>
                         </div>

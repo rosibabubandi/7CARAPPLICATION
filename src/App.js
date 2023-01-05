@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react'
-import {Routes, Route, Navigate} from 'react-router-dom'
+import {Routes, Route,Navigate} from 'react-router-dom'
 
 import Settings from './components/Settings'
 import Products from './components/Products'
@@ -44,7 +44,7 @@ const App = () => {
         return(
             <ARContext.Provider value={{activeTab, allUsersData, changeTab:changeTab, storeUsersData:storeUsersData, onDeleteUser: onDeleteUser}}>
                 <Routes>
-                    <Route exact path='/settings' element={<Settings/>}/>
+                    <Route exact path='/' element={<Settings/>}/>
                     <Route exact path='/products' element={<Products/>}/>
                     <Route exact path='/demoscript' element={<DemoScript/>}/>
                     <Route exact path='/customers' element={<Customers/>}/>
