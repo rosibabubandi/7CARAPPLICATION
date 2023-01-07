@@ -9,6 +9,7 @@
 }
 
 .only-modal-container {
+    max-width: 70vw;
     display: flex;
     
 }
@@ -36,4 +37,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-width: 767px){
+    .settings-main-container {
+      min-width: 50vw;
+      height: 75vh;
+      display: flex;
+    }
+    .settings-container {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .table-style {
+      border: 1px solid #ebe1e2;
+      min-width: 45vw;
+      max-width: 50vw;
+      text-align: center;
+    }
   }

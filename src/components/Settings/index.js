@@ -81,13 +81,13 @@ const Settings=() => {
                     <div className='only-modal-container'>
                         <SigInModal/>
                     </div>
-                        <Table className='table-style'
-                        dataSource={arUsersList}
-                        pagination={{
-                            pageSize:4
-                        }}
-                        columns={columns}
-                        />
+                    <Table className='table-style'
+                    dataSource={arUsersList}
+                    pagination={{
+                        pageSize:4
+                    }}
+                    columns={columns}
+                    />
                 </div>
             </div>
         </>

@@ -11,7 +11,7 @@
 }
 .popup-main-container {
     height: 60vh;
-    width: 60vw;
+    width: 70vw;
     background-color: #ffffff;
     box-shadow: 0px 4px 16px 0px #e6e0ca;
     border-radius: 10px;
@@ -30,7 +30,7 @@
   padding: 10px;
 }
 .add-user-image {
-  margin-top: 10px;
+    margin-top: 10px;
     height: 45%;
     width: 65%;
 }
@@ -49,11 +49,11 @@
 }
 .user-information-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 .form-container {
-    height: 88%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -98,16 +98,16 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   .cancel-button {
     background-color: #c78708;
     border: none;
     color: #ffffff;
     height: 35px;
-    width: 95px;
+    width: 45%;
     font-family: 'Roboto';
-    margin-right: 10px;
+    margin-right: 7px;
     cursor: pointer;
     font-size: 14px;
   }
@@ -116,9 +116,9 @@
     border: none;
     color: #ffffff;
     height: 35px;
-    width: 95px;
+    width: 43%;
     font-family: 'Roboto';
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
     font-size: 14px;
   }
@@ -135,5 +135,42 @@
         display: flex;
         border: 1px solid #ebe1e2;
         border-radius: 5px;
+    }
+    .user-information-text {
+      font-weight: bold;
+      font-size: 20px;
+  }
+    .form-container {
+    height: 88%;
+    width: 90%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 20px;
+  }
+    .cancel-button {
+      background-color: #c78708;
+      border: none;
+      color: #ffffff;
+      height: 35px;
+      width: 95px;
+      font-family: 'Roboto';
+      margin-right: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .add-button {
+      background-color: #10b040;
+      border: none;
+      color: #ffffff;
+      height: 35px;
+      width: 95px;
+      font-family: 'Roboto';
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 14px;
     }
 }
