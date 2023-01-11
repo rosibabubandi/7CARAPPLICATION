@@ -64,7 +64,7 @@ const SigInModal=() => {
           storeUsersData(newUserObject)
           setUsername('')
           setEmailId('')
-          setRole('')
+          setRole('Admin')
         }
 
       }
